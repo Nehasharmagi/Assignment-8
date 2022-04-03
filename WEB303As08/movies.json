@@ -1,0 +1,81 @@
+{
+"movies":[
+    {
+        "name":"83",
+        "year":"2021",
+        "director":"Kabir Khan",
+        "genre":"Drama",
+         "rating":"9"
+    },
+    {
+        "name":"14 Phere",
+        "year":"2019",
+        "director":"Devanshu Singh",
+        "genre":"Romance",
+        "rating":"6.5"
+    },
+    {
+        "name":"Aadhaar",
+        "year":"2018",
+        "director":"Suman Ghosh",
+        "genre":"Drama",
+        "rating":"7.0"
+    },
+    {
+        "name":"Ajeeb Daastaans",
+        "year":"2017",
+        "director":"Neeraj Ghaywan",
+        "genre":"Romance",
+         "rating":"8.0"
+    },
+    {
+        "name":"Antim:The Final Truth",
+        "year":"2021",
+        "director":"Mahesh Manjrekar",
+        "genre":"Action",
+         "rating":"6.5"
+    },
+    {
+        "name":"BellBottom",
+        "year":"2017",
+        "director":"Ranjit Tewari",
+        "genre":"Horror",
+        "rating":"8"
+    },
+    {
+        "name":"Bhoot Police",
+        "year":"2017",
+        "director":"Pawan Kripalani",
+        "genre":"comedy",
+         "rating":"8"
+    },
+    {
+        "name":"Bob Biswas",
+        "year":"2019",
+        "director":"Diya Annapurna Ghosh",
+        "genre":"Crime",
+         "rating":"7"
+    },
+    {
+        "name":"Chehre",
+        "year":"2021",
+        "director":"Rumi Jalffery",
+         "genre":"Drama",
+         "rating":"7"
+    },
+    {
+         "name":"Dhamaka",
+         "year":"2020",
+         "director":"Rumi Jalffery",
+         "genre":"Drama",
+         "rating":"7"
+    },
+    {
+        "name":"I am Alone ,so Are you",
+        "year":"2019",
+        "director":"Harish Vyas",
+        "genre":"Romance",
+"rating":"7"
+ 
+    }
+]}
