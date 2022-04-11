@@ -5,77 +5,96 @@
         "year":"2021",
         "director":"Kabir Khan",
         "genre":"Drama",
-         "rating":"9"
+         "rating":"9",
+         "publishedDate":"2021-04-21"
     },
     {
         "name":"14 Phere",
         "year":"2019",
         "director":"Devanshu Singh",
         "genre":"Romance",
-        "rating":"6.5"
+        "rating":"6.5",
+         "publishedDate":"2019-07-21"
     },
     {
         "name":"Aadhaar",
         "year":"2018",
         "director":"Suman Ghosh",
         "genre":"Drama",
-        "rating":"7.0"
+        "rating":"7.0",
+         
+         "publishedDate":"2018-09-11"
     },
     {
         "name":"Ajeeb Daastaans",
         "year":"2017",
         "director":"Neeraj Ghaywan",
         "genre":"Romance",
-         "rating":"8.0"
+         "rating":"8.0",
+         "publishedDate":"2017-03-21"
     },
     {
         "name":"Antim:The Final Truth",
         "year":"2021",
         "director":"Mahesh Manjrekar",
         "genre":"Action",
-         "rating":"6.5"
+         "rating":"6.5",
+
+         "publishedDate":"2021-02-11"
     },
     {
         "name":"BellBottom",
         "year":"2017",
         "director":"Ranjit Tewari",
         "genre":"Horror",
-        "rating":"8"
+        "rating":"8",
+
+         "publishedDate":"2017-07-21"
     },
     {
         "name":"Bhoot Police",
         "year":"2017",
         "director":"Pawan Kripalani",
         "genre":"comedy",
-         "rating":"8"
+         "rating":"8",
+
+         "publishedDate":"2017-04-22"
     },
     {
         "name":"Bob Biswas",
         "year":"2019",
         "director":"Diya Annapurna Ghosh",
         "genre":"Crime",
-         "rating":"7"
+         "rating":"7",
+
+         "publishedDate":"2019-07-23"
     },
     {
         "name":"Chehre",
         "year":"2021",
         "director":"Rumi Jalffery",
          "genre":"Drama",
-         "rating":"7"
+         "rating":"7",
+
+         "publishedDate":"2021-01-21"
     },
     {
          "name":"Dhamaka",
          "year":"2020",
          "director":"Rumi Jalffery",
          "genre":"Drama",
-         "rating":"7"
+         "rating":"7",
+
+         "publishedDate":"2020-09-11"
     },
     {
         "name":"I am Alone ,so Are you",
         "year":"2019",
         "director":"Harish Vyas",
         "genre":"Romance",
-"rating":"7"
+"rating":"7",
+
+         "publishedDate":"2019-09-25"
  
     }
 ]}

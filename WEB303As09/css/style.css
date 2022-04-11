@@ -51,3 +51,20 @@ button.hover, button.active {
 	color: #F93500;
 	cursor: pointer;
 }
+
+/*Table style*/
+
+th.ascending:after {
+    content: '\25B2';
+    float: right;
+}
+
+th.descending:after {
+    content: '\25BC';
+    float: right;
+}
+
+th.ascending, th.descending, table.sortable th:hover {
+	background-color: cadetblue;
+    cursor: pointer;
+}
