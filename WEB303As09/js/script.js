@@ -5,7 +5,7 @@ $(function () {
     var cache = [ // Create array of cache
         
     ];
-    var lastNameCount = [0, 0]; // initially 0 last names starting with a- m and 0 starting with n - z
+    var name = [0, 0]; // initially 0 last names starting with a- m and 0 starting with n - z
     var $buttons = $('#buttons'); // Store buttons
 
     // this method is asynchronous, so anything that depends on this data needs to be build inside 
