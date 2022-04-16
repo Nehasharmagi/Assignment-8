@@ -97,15 +97,15 @@ $(function () {
                 var index = 0; // Set index to 0
                 index = movie.fname.indexOf(query); // Is text in there?
                 if (index != -1) { // we found the string in their first name
-                    movie.element.addClass("found-first-name"); // we will apply colours based on this class
+                    movie.element.addClass("found-name"); // we will apply colours based on this class
                 }
                 else { // player first name doesn't have the query string, make sure it's not higlighted
-                    movie.element.removeClass("found-first-name")
+                    movie.element.removeClass("found-name")
                 }
             });
         }
         else { // if the search is empty, nobody should be highlighted
-            $('tbody tr').removeClass("found-first-name");
+            $('tbody tr').removeClass("found-name");
         }
     }
     // if the search input box supports the input event, we want to use it instead of the keyup event
