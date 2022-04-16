@@ -22,7 +22,7 @@ $(function () {
     // the done method or in a function that is called AFTER the method is done
     $.getJSON("movies.json").done((data) => {
         // jQuery.each of the players in the array
-        $.each(data.players, function (key, val) {
+        $.each(data.movies, function (key, val) {
             console.log("data key: ", key, " and data value: ", val);
 
             var $row = $('<tr></tr>'); // Create their row
