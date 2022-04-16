@@ -27,28 +27,30 @@ $(function () {
 
             var $row = $('<tr></tr>'); // Create their row
             // populate data
-            $row.append($('<td></td>').text(val.first_name));
-            $row.append($('<td></td>').text(val.last_name));
-            $row.append($('<td></td>').text(val.title));
-            $row.append($('<td></td>').text(val.description));
+            $row.append($('<td></td>').text(val.name));
+            $row.append($('<td></td>').text(val.year));
+            $row.append($('<td></td>').text(val.director));
+            $row.append($('<td></td>').text(val.genre));
             $row.append($('<td></td>').text(val.rating));
+            $row.append($('<td></td>').text(val.publishedDate));
+
 
             $tbody.append($row); // Add row to the tbody
 
             cache.push({ // Create the cache that contains several values
                 element: $row, // Reference to the row element
                 // The text we're searching against (which in this case is first name)
-                fname: val.first_name.trim().toLowerCase(),
+                name: val.name.trim().toLowerCase().charAt(0),
                 // we only need the first character of the last name for filtering
-                lnameFirstCharacter: val.last_name.trim().toLowerCase().charAt(0)
+                
             });
 
             // add to the count for last names starting with a - m, and n - z
-            if ("a" <= val.last_name.trim().toLowerCase().charAt(0) && "m" >= val.last_name.trim().toLowerCase().charAt(0)) {
-                lastNameCount[0]++; // index 0 will be for if the last name starts with a - m
+            if ("a" <= val.name.trim().toLowerCase().charAt(0) && "m" >= val.name.trim().toLowerCase().charAt(0)) {
+                name[0]++; // index 0 will be for if the last name starts with a - m
             }
             else { // n - z
-                lastNameCount[1]++; // index 1 will be for if the last name starts with n - z
+                name[1]++; // index 1 will be for if the last name starts with n - z
             }
         });
 
@@ -56,7 +58,7 @@ $(function () {
         // We need to build the buttons after the data comes back from the server
         // otherwise lastNameCount at both indexes will alawys be 0 on the page
         $('<button/>', { // Create button
-            text: 'A - M (' + lastNameCount[0] + ')', // Add text, and the count for occurances
+            text: 'A - M (' + nameFirstCharacter[0] + ')', // Add text, and the count for occurances
             click: function () { // Add click handler
                 $(this) // Get clicked button
                     .addClass('active') // Make it active
@@ -64,7 +66,7 @@ $(function () {
                     .removeClass('active'); // Remove active class
                 cache.forEach((movie) => { // Each cache entry
                     // check if character is in range
-                    if ("a" <= movie.lnameFirstCharacter && "m" >= movie.lnameFirstCharacter) {
+                    if ("a" <= movie.nameFirstCharacter && "m" >= movie.nameFirstCharacter) {
                         movie.element.show();
                     }
                     else { // not in range, hide this chess player
@@ -72,25 +74,12 @@ $(function () {
                     }
                 });
 
-                // a far fancier solution to hiding and showing the right rows instead of the cache.forEach
-                // $('tbody rows') // With all of the images
-                //     .hide() // Hide them
-                //     .filter(cache.filter((chessPlayer) => // filter cache down to only the rows we want
-                //                              "a" <= chessPlayer.lnameFirstCharacter
-                //                              && "m" >= chessPlayer.lnameFirstCharacter)
-                //                  .map((chessPlayer) => 
-                //                          chessPlayer.element)
-                //      ) // Find ones with this tag
-                //             // map changes what we're using in our original filter.
-                //             // Instead of filtering the elements on the page based on the filtered cache array,
-                //             // We filter the elements on the page based on an array of just the row element references
-                //             // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
-                //     .show(); // Show just those images
+             
             }
         }).appendTo($buttons); // Add to buttons
 
         $('<button/>', { // Create button
-            text: `N - Z (${lastNameCount[1]})`, // Add text
+            text: `N - Z (${nameCount[1]})`, // Add text
             click: function () { // Add click handler
                 $(this) // Get clicked button
                     .addClass('active') // Make it active
@@ -98,7 +87,7 @@ $(function () {
                     .removeClass('active'); // Remove active class
                 cache.forEach((movie) => { // Each cache entry
                     // check if character is in range
-                    if ("n" <= movie.lnameFirstCharacter && "z" >= movie.lnameFirstCharacter) {
+                    if ("n" <= movie.nameFirstCharacter && "z" >= movie.nameFirstCharacter) {
                         movie.element.show();
                     }
                     else {
