@@ -3,17 +3,7 @@ $(function () {
     var $tbody = $('tbody'); // reference <tbody> element on the page
     var $search = $('#filter-search'); // reference to the search input box
     var cache = [ // Create array of cache
-        // example of how the cache gets built
-        // {
-        //     element: $row0Reference,
-        //     fname: "magnus"
-        //     lnameFirstCharacter: "c"
-        // },
-        // {
-        //     element: $row1Reference,
-        //     text: "ding"
-        //     lnameFirstCharacter: "l"
-        // }
+        
     ];
     var lastNameCount = [0, 0]; // initially 0 last names starting with a- m and 0 starting with n - z
     var $buttons = $('#buttons'); // Store buttons
