@@ -96,7 +96,7 @@ $(function () {
                     .addClass('active') // Make it active
                     .siblings() // Get its siblings
                     .removeClass('active'); // Remove active class
-                cache.forEach((chessPlayer) => { // Each cache entry
+                cache.forEach((movie) => { // Each cache entry
                     // check if character is in range
                     if ("n" <= movie.lnameFirstCharacter && "z" >= movie.lnameFirstCharacter) {
                         movie.element.show();
@@ -114,9 +114,9 @@ $(function () {
     function filter() {
         var query = this.value.trim().toLowerCase(); // Get query
         if (query) { // If there’s a query
-            cache.forEach(function (chessPlayer) { // Each cache entry
+            cache.forEach(function (movie) { // Each cache entry
                 var index = 0; // Set index to 0
-                index = chessPlayer.fname.indexOf(query); // Is text in there?
+                index = movie.fname.indexOf(query); // Is text in there?
                 if (index != -1) { // we found the string in their first name
                     movie.element.addClass("found-first-name"); // we will apply colours based on this class
                 }
